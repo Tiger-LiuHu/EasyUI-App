@@ -1,0 +1,268 @@
+@charset "utf-8";
+/*水电集团ui左边树样式*/
+/*一、二级菜单样式--------------start*/
+/*收缩按钮样式*/
+.collapseWest {
+	padding: 8px 0;
+}
+.collapseWest>a {
+	opacity: 0.7;
+}
+
+/*显示滚动条*/
+#primaryMenu:hover::-webkit-scrollbar-thumb,
+.datagrid-body::-webkit-scrollbar-thumb,
+.easyui-layout::-webkit-scrollbar-thumb,
+.panel.layout-panel.layout-panel-center::-webkit-scrollbar-thumb,
+.centerContent.panel-body.layout-body::-webkit-scrollbar-thumb,
+.panel-body::-webkit-scrollbar-thumb {
+	background: #dcdcdc;
+	border-radius: 5px;
+}
+#primaryMenu:hover::-webkit-scrollbar-track-piece,
+.datagrid-body::-webkit-scrollbar-track-piece,
+.easyui-layout::-webkit-scrollbar-track-piece,
+.panel.layout-panel.layout-panel-center::-webkit-scrollbar-track-piece,
+.centerContent.panel-body.layout-body::-webkit-scrollbar-track-piece,
+.panel-body::-webkit-scrollbar-track-piece {
+	background: #f0f0f0;
+}
+
+#primaryMenu,
+#collapseAccordion {
+	background: #333743;
+}
+
+/*手风琴内容样式*/
+#primaryMenu .accordion,
+#collapseAccordion.accordion,
+.accordion .accordion-body {
+	border-width: 0;
+}
+
+#primaryMenu .accordion,
+#primaryMenu .panel-body {
+	background: none;
+	color: #fff;
+	opacity: .8;
+}
+/*手风琴标题样式*/
+#primaryMenu .accordion .accordion-header {
+	padding: 10px 0 10px 23px;
+	/*opacity: 0.7;*/
+}
+
+#primaryMenu .accordion-body>ul>li,
+.subMenu #subMenuList>li {
+	padding: 10px 0 10px 40px;
+	font-size: 14px;
+	/*opacity: 0.7;*/
+}
+#primaryMenu .accordion .accordion-header,
+#collapseAccordion.accordion {
+	border-top-width: 0;
+	border-bottom-width: 0;
+	background: #41485B;
+}
+#primaryMenu .accordion .accordion-header:hover,
+.collapseWest>a:hover {
+	/*opacity: 1;*/
+	background: rgba(98,106,126,.6);
+}
+.collapseWest>a.icon-kaishirenwu:hover {
+	background: none;
+}
+#primaryMenu .accordion .accordion-header .panel-title,
+#collapseAccordion.accordion .accordion-header .panel-title {
+	font-size: 14px;
+	color: #fff;
+}
+
+/*一、二级菜单样式--------------end*/
+
+/*三级菜单样式--------------start*/
+/*三级主菜单颜色*/
+.subMenu {
+	background: #E2E7ED;
+	overflow-x: hidden;
+    border-right: 0;
+}
+
+.submenu #subMenuList>li {
+	padding: 5px 0;
+	/*margin: 10px 0 10px 40px;*/
+}
+.submenu #subMenuList>li.item.active {
+	/*background: none;*/
+}
+.subMenu #subMenuList>li:hover {
+	color: #333;
+}
+.subMenu #subMenuList>li span:first-child {
+	display: block;
+	width: 100%;
+}
+.subMenu #subMenuList>li .three-menu {
+	padding-left: 40px;
+	height: 30px;
+	line-height: 30px;
+}
+.subMenu #subMenuList>li.active .three-menu {
+	/*background: #fff;*/
+	opacity: 1;
+}
+
+.subMenu #subMenuList>li ul {
+	padding: 5px 0 0 45px;
+}
+
+.subMenu #subMenuList>li ul li:hover {
+	color: rgb(64, 125, 211);
+}
+
+.subMenu #subMenuList>li ul li.active {
+	color: rgb(64, 125, 211);
+	background: none;
+}
+
+/*三级菜单折叠按钮*/
+.subCollapse,.subExpand {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: 1000000;
+	width: 0;
+	height: 10px;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.subCollapse {
+	border-right: 11px solid #f7f7f7;
+	border-left: 8px solid transparent;
+	margin-right: -1px;
+}
+
+/*三级菜单折叠按钮点击状态*/
+.subCollapse.subExpand {
+	border-left: 11px solid #E2E7ED;
+	border-right: 8px solid transparent;
+	margin-right: -4px;
+}
+
+/*三级菜单折叠按钮点击状态*/
+.subCollapse:hover {
+	border-right: 11px solid #E2E7ED;
+	border-left: 8px solid transparent;
+}
+.subCollapse.subExpand:hover{
+	border-left: 11px solid #E2E7ED;
+	border-right: 8px solid transparent;
+}
+
+.subCollapse>i,.subCollapse>a {
+	position: relative;
+	right: -3px;
+	top: -4px;
+	color: #8E9196;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.subCollapse.subExpand>i {
+	right:9px;
+}
+
+.subCollapse:hover>i {
+	color: #333;
+}
+
+/*三级菜单west区域收缩样式*/
+#mainCenter .layout-expand-west {
+	width: 15px !important;
+	height: 100%;
+	background: none;
+}
+
+/*去掉边框*/
+#mainCenter .layout-expand-west .panel-body,
+#mainCenter .layout-expand-west .panel-header {
+	border-width: 0;
+}
+#mainCenter .layout-expand-west .panel-header {
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	padding: 0;
+}
+
+#mainCenter .layout-expand-west .panel-tool {
+	right: 22%;
+}
+
+/*去掉按钮背景*/
+#mainCenter .layout-expand-west .panel-tool .layout-button-right {
+	background: none;
+}
+
+/*三级菜单抬头*/
+.subMenuTitle {
+	height: 48px;
+	line-height: 48px;
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	background: #D9DEE4;
+}
+
+/*三级菜单样式--------------end*/
+
+/*layout相关样式======================start*/
+/*标题按钮*/
+#primaryMenu .panel-tool {
+	right: 50%;
+}
+.layout-expand-west .panel-tool {
+	right: 22%;
+}
+
+/*手风琴菜单项选中样式*/
+.item:hover, .item.active {
+/*	opacity: 1 !important;*/
+	background-color: #407DD1;
+}
+
+.submenu #subMenuList .item {
+	color: #333;
+}
+
+.submenu #subMenuList .item:hover {
+	background-color: #f3f5f8;
+}
+
+.submenu #subMenuList .item.active {
+	background-color: #fff;
+}
+
+/*west折叠区域下的手风琴样式*/
+#collapseAccordion .item {
+	padding-left: 5px;
+	color: #fff;
+}
+
+/*accordion相关样式======================start*/
+/*手风琴折叠按钮隐藏*/
+.accordion-collapse,
+.accordion-expand {
+	background: none;
+	opacity: 0;
+}
+
+.panel-tool .accordion-collapse:hover,
+.panel-tool .accordion-expand:hover {
+	opacity: 0;
+}
+/*accordion相关样式======================end*/

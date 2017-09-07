@@ -1,0 +1,293 @@
+/*------------------------------------通用------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,
+ol,ul,fieldset,form,label,legend,input,select,textarea,table,caption,tbody,tfoot,thead,tr,th,td
+{margin: 0; padding: 0;}/*全局边距清零*/
+body{
+  font-family:'微软雅黑','宋体',"Helvetica Neue",sans-serif,Arial,Georgia,Tahoma;
+  color:#666;
+  font-size:12px;
+  background-color:#fff;
+  box-sizing:border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}/*全局字体样式*/
+
+/*常用定义*/
+input, a img,img,iframe,fieldset{border:none;}/*为元素去掉边框*/
+a span,form label,.pointer,button{cursor:pointer;}/*鼠标显示为手形*/
+ul,ol{list-style:none;}/*去掉列表样式*/
+
+select,textarea,input,button{vertical-align:middle;font-family:inherit;font-size:100%;}/*文本水平居中*/
+hr {margin-top: 20px;margin-bottom: 20px;border: 0;border-top: 1px solid #eee;}/*水平线样式*/
+img {vertical-align: middle;}
+
+/*a的四种状态*/
+a:link,.link,a:visited,.visited,a:hover,.hover,a:active,.comm_active {
+  text-decoration: none;
+}
+/*a:link,.link{color: #666; }
+a:visited,.visited{ color: #808080; }
+a:hover,.hover{color: #993300;}
+a:active,.comm_active{ color: #9c5141;}*/
+
+.comm-form {}
+.comm-form div {}
+.comm-form div label {text-align:right; display:inline-block;_zoom:1;*display:block; width:100px;vertical-align: middle;} 
+
+/*------------------------------------颜色------------------------------------*/
+/*背景颜色*/
+.comm_bgcolor { background-color: #f8f8f8;}/*基础背景颜色*/
+.comm_bgcolor_head {background-color: #eee;}/*基础header颜色*/
+.comm_bgcolor_footer{background-color: #2d3236;}/*基础footer颜色*/
+.comm_bgcolor_box {background-color: #fff;}/*布局框背景颜色*/
+.comm_bgcolor_active {background-color: #DFDFDF;}/*元素激活时背景颜色*/
+.comm_bgcolor_alert {background-color: #F16412;}/*警告框背景颜色*/
+
+/*背景颜色扩展*/
+.comm_bgcolor_green {background-color: #08f208;}/*绿色背景颜色*/
+.comm_bgcolor_orange {background-color: #fc8115;}/*橘红色背景颜色*/
+.comm_bgcolor_blue {background-color: #007aff;}/*蓝色背景颜色*/
+.comm_bgcolor_ligntblue {background-color: #cae0fb;}/*浅蓝色背景颜色*/
+
+/*字体颜色*/
+.comm_color {color: #666;}/*基础字体颜色*/
+.comm_color_head {color: #808080;}/*导航字体颜色*/
+.comm_color_title {color: #333;}/*标题字体颜色*/
+.comm_color_active {color: #00A1EA !important;}/*激活字体颜色*/
+.comm_color_hint {color: #999;}/*提示字体颜色*/
+.comm_color_warn {color: #c53336;}/*警告字体颜色*/
+.comm_color_btn {color: #fff;}/*按钮字体颜色*/
+.comm_color_white {color: #fff;}/*按钮字体颜色*/
+
+/*边框颜色*/
+.comm_bdcolor {border-color: #dfdfdd;}/*基础边框颜色*/
+.comm_bdcolor_body {border-color: #dbd6d6;}/*导航边框颜色*/
+.comm_bdcolor_box {border-color: #eeeeee;}/*布局框边框颜色*/
+.comm_bdcolor_controls {border-color: #dddddd;}/*控件边框颜色*/
+.comm_bdcolor_warn {border-color: #FC7800;}/*突出显示边框颜色*/
+
+
+/*------------------------------------大小------------------------------------*/
+/*字体大小*/
+.comm_size{font-size:14px;}/*基础字体大小（正文）*/
+.comm_size_nav{font-size:1.8rem;}/*导航字体大小*/
+.comm_size_toolbar{font-size:1.5rem;}/*工具栏字体大小*/
+.comm_size_footer{font-size:1.5rem;}/*页脚字体大小*/
+.comm_size_box{font-size:1.4rem;}/*布局标题字体大小*/
+.comm_size_title{font-size:1.8rem;}/*基础标题字体大小*/
+.comm_size_title_lg{font-size:18px;}/*大标题字体大小*/
+.comm_size_title_sm{font-size:1.5rem;}/*小标题字体大小*/
+.comm_size_hint{font-size:1.5rem;}/*提示文字字体大小*/
+
+/*行高组*/
+.comm_line {line-height:1.5;}/*基础行高大小(列表)*/
+
+/*高度组*/
+.comm_h_nav{height:88px;}/*页头高度*/
+.comm_h_toolbar{height:102px;}/*工具栏高度*/
+.comm_h_footer{height:102px;}/*页脚高度*/
+
+/*宽度组*/
+.comm_w{width:100%;}/*默认宽度大小*/
+.comm_w_1024{ width:1024px;}
+
+/*内边距*/
+.comm_pa{padding:10px;}/*默认四周内边距*/
+.comm_pa_none{padding:0}
+.comm_pa5{padding:5px}/*默认四周内边距*/
+
+/*外边距*/
+.comm_ma{margin:10px}/*默认四周外边距*/
+.comm_ma_none{margin:0}
+.comm_ma{margin:5px}
+
+/*------------------------------------形状------------------------------------*/
+/*图片组*/
+.comm_img_responsive{display: block;width: 100%;}/*圆片自适应*/
+.comm_img_frame {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}/*图片框*/
+
+/*边框组*/
+.comm_border{border:1px solid #ddd;}/*基础全边框——实线*/
+.comm_borderd{border:1px dotted #ddd;}/*基础全边框——虚线*/
+.comm_border_none{border:none;}/*无边框*/
+.comm_border_left{border-left:1px solid #ddd;}/*左边框*/
+.comm_border_right{border-right:1px solid #ddd;}/*右边框*/
+.comm_border_top{border-top:1px solid #ddd;}/*上边框*/
+.comm_border_bottom{border-bottom:1px solid #ddd;}/*下边框*/
+.comm_bds_solid{border-style:solid;}/*实线*/
+.comm_bds_dotted{border-style:dotted;}/*点状虚线*/
+.comm_bds_dashed{border-style:dashed;}/*线状虚线*/
+
+/*圆角组*/
+.comm_border_circle{border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}/*圆形*/
+.comm_border_radius{border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}/*全圆角*/
+.comm_border_topr{-moz-border-radius-topleft:3px;-webkit-border-top-left-radius:3px; border-top-left-radius:3px;-moz-border-radius-topright:3px;-webkit-border-top-right-radius:3px; border-top-right-radius:3px;}/*上圆角(左、右)*/
+.comm_border_bottomr{-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px; border-bottom-left-radius:3px;-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px; border-bottom-right-radius:3px;}/*下圆角(左、右)*/
+.comm_border_ltr{-moz-border-radius-topleft:3px;-webkit-border-top-left-radius:3px; border-top-left-radius:3px;}/*左上角圆角*/
+.comm_border_rtr{-moz-border-radius-topright:3px;-webkit-border-top-right-radius:3px;border-top-left-radius:3px;}/*右上角圆角*/
+.comm_border_lbr{-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;}/*左下角圆角*/
+.comm_border_rbr{-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;}/*左下角圆角*/
+
+/*阴影组*/
+.comm_bdshadow{-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .075);box-shadow: 0 1px 0 rgba(0, 0, 0, .075);}/*边框外阴影*/
+.comm_bdshadow_inset{-webkit-box-shadow:inset 0 1px 0 rgba(0, 0, 0, .075);box-shadow:inset 0 1px 0 rgba(0, 0, 0, .075);}/*边框内阴影*/
+.comm_text_shadow{-webkit-text-shadow:0 1px 0 rgba(0, 0, 0, .075);text-shadow:0 1px 0 rgba(0, 0, 0, .075);}/*文本阴影*/
+mark, .comm_text_mark {padding: .2rem; background-color: #fcf8e3; color:#fcf8e3;}/*文本高亮显示*/
+
+/*换行组*/
+.comm_break{ word-break:break-all; word-wrap:break-word;}/*文本强制换行*/
+.comm_nobreak{ word-break:keep-all; word-wrap:normal;}/*文本强制不换行*/
+.comm_ellipsis{display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}/*文本省略效果*/
+.comm_inlineb{display:inline-block;*display:inline;*zoom:1;}/*块强制不换行*/
+.comm_inline{display:inline;}/*设置为行内元素-用得比较少*/
+.comm_block{display:block;}/*设置为块元素，独占一行*/
+
+/*文本下划线*/
+.comm_unline{ text-decoration:underline;}/*文本下划线*/
+.comm_nounline{ text-decoration:none;}/*取消文本下划线*/
+.comm_txt_througn{ text-decoration:line-through;}/*横线穿过文本*/
+
+/*显示隐藏组*/
+.comm_dshow{display:block;}/*显示元素*/
+.comm_vshow{visibility:visible;}/*显示元素*/
+.comm_dhide{display:none;}/*隐藏元素——不占页面空间*/
+.comm_vhide{visibility:hidden;}/*隐藏元素——占页面空间*/
+.comm_ohide{overflow:hidden;}/*超出部分隐藏*/
+.comm_oshow{overflow:visible;}/*超出部分显示*/
+
+/*盒子模型组*/
+.comm_boxsizing{box-sizing:border-box;}/*固定盒子大小*/
+.comm_boxsizing_cb{box-sizing:content-box;}/*固定内容大小*/
+
+/*对齐方式组*/
+/*水平对齐*/
+.comm_center{margin:0 auto;}/*容器居中对齐*/
+.comm_txt_left{text-align:left;}/*内容左对齐*/
+.comm_txt_right{text-align:right;}/*内容右对齐*/
+.comm_txt_center{text-align:center;}/*内容居中对齐*/
+/*垂直对齐*/
+.comm_middle{vertical-align:middle;}
+
+/*------------------------------------交互------------------------------------*/
+/*------------------------------------组件------------------------------------*/
+/*--------------布局组件-----------------*/
+/*布局*/
+.comm_box{display:block;background-color:#fff;margin:0 auto;width:100%;}/*行布局框*/
+.comm_item{display:block;background-color:#fff;margin:0 auto;width:100%;}/*列布局框架*/
+
+/*列表布局*/
+ul.comm_list_unstyle,ul.comm_list_inline{padding:10px;}
+ul.comm_list_unstyle li{display:block;}
+ul.comm_list_inline li{display:inline-block;}
+
+/*定位*/
+.comm_pos_rel{position:relative;}/*相对定位*/
+.comm_pos_abs{position:absolute;}/*绝对定位*/
+.comm_pos_fix{position:fixed;}/*固定定位*/
+.comm_left0{left:0;}
+.comm_right0{right:0;}
+.comm_top0{top:0;}
+.comm_bottom0{bottom:0;}
+
+/*浮动*/
+.comm_float_left{float:left;}/*左浮动*/
+.comm_float_right{float:initial;}/*右浮动 暂时清除右浮动*/
+.comm_float_cl:after{content:'';display:table;clear:both;}/*清除浮动*/
+
+/*--------------头像(logo)组件-----------------*/
+.comm_nickimg_lg{border-radius:50%;width:14rem;height:14rem;}/*大头像*/
+.comm_nickimg_md{border-radius:50%;width:9.6rem;height:9.6rem;}/*中头像*/
+.comm_nickimg_sm{border-radius:50%;width:8rem;height:8rem;}/*小头像*/
+
+
+/*广告图片尺寸大小*/
+.comm_banner_lg{width:100%;height:55rem;}/*图片轮播尺寸大*/
+.comm_banner_sm{width:100%;height:10rem;}/*图片轮播尺寸小*/
+
+
+/*产品展示尺寸大小*/
+.comm_product_xs{width:5.4rem;height:5.4rem;}/*超小产品图:列表页*/
+.comm_product_sm{width:13rem;height:13rem;}/*小产品图:列表页*/
+.comm_product_md{width:35rem;height:35rem;}/*产品图:详情页*/
+.comm_product_lg{width:61.1rem;height:61.1rem;}/*大产品图:详情页*/
+
+
+/*--------------按钮组件-----------------*/
+/*按钮样式*/
+button,input[type="button"],input[type="reset"], input[type="submit"],.comm_btn,.comm_btn_xs,.comm_btn_sm,.comm_btn_lg,.comm_btn_md{
+  overflow: visible;border:none;width:90%;font-size:1.5rem;line-height:2;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+  border-width:1px;border-style:solid;
+  -webkit-border-radius:6px;-o-border-radius:6px;-moz-border-radius:6px;border-radius:6px;
+  color:#757575;  
+}/*默认按钮样式*/
+.comm_btn_xs{font-size:1.2rem;}/*超小*/
+.comm_btn_sm{font-size:1.5rem;}/*小*/
+.comm_btn_md{font-size:1.8rem;}/*中*/
+.comm_btn_lg{font-size:2rem;}/*大*/
+
+/*按钮组*/
+.comm_btn_1{
+  background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
+  background-image: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+  background-repeat: repeat-x;border-color:#dbdbdb;
+}
+.comm_btn_2{border-color: #0a8eea; background-color: #00A1EA;color:#fff;}
+
+/*按钮状态*/
+.comm_btn_active{
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  background-color: #e0e0e0;
+  border-color: #dbdbdb;
+}/*激活按钮*/
+button[disabled],.comm_btn_disabled{
+  background-color: #e0e0e0;
+  background-image: none;
+}/*禁用按钮*/
+
+/*按钮交互*/
+button:hover,button:focus,.comm_btn:hover,.comm_btn:focus{
+  background-color: #ccc;
+  background-position: 0 -15px;
+}
+
+.swiper-container {
+  height: 240px;
+}
+.swiper-slide {
+  background: #000;
+  position: relative;
+  
+}
+.swiper-slide img {
+  position: absolute;
+  left:50%;
+  top:50%;
+  width: 100%;
+  height: 240px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* 设置panel最大高度  */
+.mh-200 .panel-body {max-height: 200px !important;}

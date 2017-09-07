@@ -1,0 +1,30 @@
+/*设置单元格内容超过指定长度后，显示...*/
+.datagrid-cell{
+    white-space:nowrap;/*强制内容不换行*/
+    overflow:hidden;/*超出隐藏*/
+    text-overflow:ellipsis;/*ie专用，文本溢出时显示省略标记*/
+    margin-left:0;
+    margin-right:0;
+}
+
+.datagrid-row{
+    height:27px;
+}
+
+.l-btn-icon.fa.fa-search {
+    left: 6px;
+    line-height: 16px;
+}
+
+.panel-icon.fa.fa-list-alt.fa-lg {
+    line-height: 16px;
+}
+
+/*表格dataggrid没有数据时的提示--自定义样式-------移到架构文件去*/
+.datagrid_hint  {
+    color:#b2b2b2;
+}
+.datagrid_hint>i {
+    color:#407DD1;
+    font-size:14px;
+}

@@ -1,0 +1,459 @@
+@charset "utf-8";
+/*easyui扩展样式*/
+/*水电集团主题样式======================start*/
+/*datagrid分页------------start*/
+.datagrid-pager.pagination>table,
+.datagrid-pager.pagination>.pagination-info {
+	float: right;
+	color: #999999;
+	line-height: 47px;
+}
+/*datagrid分页/toolbar背景颜色*/
+
+.datagrid .datagrid-pager {
+	background: #F5F6FA;
+	border:solid #DCDCDC;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+/*datagrid分页字体颜色*/
+.pagination-page-list, .pagination .pagination-num {
+	color:#999999;
+	height: 24px;
+}
+
+/*datagrid页数输入框大小*/
+.pagination .pagination-num{
+	width: 33px;
+	text-align: center;
+}
+
+.pagination-btn-separator {
+	border-right: 1px solid #F5F6FA;
+}
+
+/*分页icon颜色*/
+.pagination-link{
+	background-color: #F0f0f0;
+	color: #999999;
+	border-radius: 0;
+	border:1px solid #DCDCDC;
+}
+
+/*去掉分页中非数字按钮边框、背景色*/
+.pagination .pagination-link.l-btn-plain {
+	border: 1px solid #ddd;
+	border-left: none;
+	background: #f0f0f0;
+	padding: 0 10px;
+}
+
+/*分页链接的左边框和hover状态的边框颜色*/
+.pagination .pagination-link.l-btn-plain:first-child {
+	border-left: 1px solid #ddd;
+}
+.pagination .pagination-link.l-btn-plain:first-child.l-btn-plain-selected:hover {
+	border-left: 1px solid #ddd;
+}
+.pagination .l-btn-plain {
+	border-width: 1px;
+	border-color: transparent;
+	background: none;
+	padding: 2px 0;
+}
+.pagination .l-btn-text {
+	line-height: 28px;
+}
+
+/*分页数字按钮hover样式*/
+.pagination .l-btn-plain:hover {
+	padding: 2px 0;
+	border-color: transparent;
+}
+
+.pagination .pagination-link.l-btn-plain:hover,
+.pagination .pagination-link.l-btn-plain-selected {
+	background: #407DD1;
+	border-color: #407DD1;
+	padding: 0 10px;
+}
+
+/*分页链接数选择和hover时的背景颜色*/
+.l-btn-selected,
+.l-btn-selected:hover {
+	background: #407DD1;
+	border: 1px solid #407DD1;
+}
+
+/*分页选中条数、hover时的字体颜色*/
+.pagination .pagination-link.l-btn-plain:hover .l-btn-text,
+.pagination .pagination-link.l-btn-plain-selected .l-btn-text,
+.l-btn-plain-selected {
+	color: #fff;
+}
+/*datagrid分页----------end*/
+
+
+
+
+
+
+
+/*datagrid  toolbar样式（兼容修改现有未改toolbar的样式）---------------start*/
+/*toolbar下面的按钮字体加粗重写*/
+.panel-title .easyui-linkbutton {
+	font-weight: 400;
+}
+
+.panel-body.datagrid-toolbar {
+	text-align: left;
+}
+.datagrid-toolbar {
+	padding: 8px 5px;
+	background: #fff;
+}
+.datagrid .datagrid-toolbar {
+	text-align: right;
+}
+.datagrid-btn-separator {
+	border: 0;
+}
+
+/*datagrid下的toolbar----------start*/
+.datagrid .datagrid-toolbar>a {
+	background: #407DD1;
+	/* border-color: #407DD1; */
+	border: 0;
+	color: #fff;
+}
+.datagrid .datagrid-toolbar>a:active {
+	background: #62a5ff;
+	-moz-box-shadow: 1px 1px 1px #27518d inset;
+	-webkit-box-shadow: 1px 1px 1px #27518d inset;
+	box-shadow: 1px 1px 1px #27518d inset;
+}
+.datagrid .datagrid-toolbar>a:visited {
+	background: #62a5ff;
+}
+.datagrid .datagrid-toolbar>a:not(:last-child) {
+	margin-right: 5px;
+}
+/*toolbar中的标题样式*/
+.datagrid-toolbar>span {
+	float: left;
+	height: 25px !important;
+	line-height: 27px;
+	margin-right: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/*datagrid下的toolbar----------start*/
+.tabs {
+	border-width: 0;
+}
+.tabs li {
+	margin: 0 10px -1px 0;
+	padding-top: 4px;
+}
+.tabs li a.tabs-inner {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+/*tabs样式扩展*/
+
+
+
+
+/*datagrid  toolbar样式（兼容修改现有未改toolbar的样式）---------------end*/
+
+
+
+
+
+/*表格内容过滤样式*/
+.datagrid-header,
+.datagrid-htable,
+.datagrid-header.expendFilter {
+	overflow: hidden;
+	height: 40px !important;
+	border: 0;
+}
+
+.datagrid-header-inner {
+	position: relative;
+}
+.expendFilterButton,
+.datagrid-header-row.datagrid-filter-row {
+	position: absolute;
+	top: 0;
+}
+
+/*表格过滤样式-----------start*/
+.datagrid-header-row.datagrid-filter-row{
+	z-index: -1;
+}
+.expendFilter .datagrid-header-row.datagrid-filter-row{
+	z-index:1;
+	top:26px;
+}
+/*表格过滤样式-----------end*/
+
+/*datagrid内容显示区域设置最小高度*/
+.panel-noscroll.multipleDatagrid,
+.panel-noscroll.multipleDatagrid .panel.datagrid {
+	overflow-y: visible;
+	width: auto;
+}
+
+.multipleDatagrid .datagrid-view,
+.multipleDatagrid .datagrid-body,
+.multipleDatagrid .datagrid-wrap {
+	/*min-height: 100px;*/
+	/*height: 100px !important;*/
+}
+
+/*表格title、center标题区域的样式*/
+.panel-title {
+	padding: 3px 0;
+}
+
+.layout-panel-center .panel-header,
+.layout-panel-south .panel-header {
+	padding: 10px;
+	background-color: #fff;
+	color: #666;
+}
+.datagrid .panel-header {
+	padding: 10px;
+	background-color: #fff;
+}
+
+.datagrid .panel-title {
+	color: #666;
+}
+/*空数据提示消息上内边距*/
+.datagrid-empty {
+	padding-top:20px;
+}
+
+/*表格空数据提示文字和表头文字颜色*/
+.datagrid-header .datagrid-cell,
+.datagrid-header-rownumber,
+.datagrid-pager {
+	color: #999;
+	background: #F5F6FA;
+}
+
+/*datagrid-view1背景色、表头鼠标移入样式*/
+.datagrid-htable .datagrid-header-rownumber,
+.datagrid-header-row td,
+.datagrid-header td.datagrid-header-over,
+.datagrid-pager {
+	background: #F5F6FA;
+}
+
+/*复选框上内边距*/
+.datagrid-header-check,
+.datagrid-cell-check {
+	padding-top: 6px;
+}
+
+/*datagrid行标题样式*/
+/*鼠标移入行背景色*/
+.datagrid-row-over {
+	background: #fff;
+}
+.datagrid-row-selected.datagrid-row-checked.datagrid-row-over {
+	background: #00bbee;
+	color: #fff;
+}
+
+/*表格内容字体颜色,鼠标移入行字体*/
+.datagrid-htable,
+.datagrid-btable,
+.datagrid-ftable{
+	color: #333;
+}
+
+/*表格内容上下内边距*/
+.datagrid-cell,
+.datagrid-cell-group,
+.datagrid-header-rownumber,
+.datagrid-cell-rownumber {
+	padding: 0 4px;
+}
+
+/*去掉datagrid-view1下面td的背景色*/
+.datagrid-td-rownumber {
+	background: #fff;
+}
+
+/*去掉表格右边框*/
+.datagrid-header td,
+.datagrid-body td,
+.datagrid-footer td {
+	border-width: 0 0 1px 0;
+	border-right: 1px solid transparent;
+}
+
+/*去掉表格最后一行td的下边框*/
+.datagrid-body tr:last-child td {
+	border-right: 1px solid transparent;
+}
+
+
+.datagrid-body td,
+.datagrid-footer td {
+	height: 48px;
+}
+/*datagrid相关样式======================end*/
+/*tree相关样式======================start*/
+/*west布局下的tree宽度设置*/
+.tree {
+	width: 100% !important;
+}
+
+.tree-node {
+	padding: 1px 0;
+}
+
+/*tree相关样式======================end*/
+
+/*按钮样式重定义====================start*/
+.l-btn {
+	width: auto;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 0;
+	color: #3c3c3c;
+	border: 1px solid #ddd;
+	background: #f0f0f0;
+	box-shadow: none;
+	cursor: pointer;
+	padding: 0 15px;
+	text-align: center;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.l-btn-text {
+	height: 28px;
+	line-height: 28px;
+}
+
+.l-btn:hover{
+	border-radius:0;
+	padding: 0 15px;
+	border: 1px solid #4b72a4;
+}
+
+a.c8:hover,
+a.easyui-linkbutton:hover,
+a.c8.active,
+a.easyui-linkbutton.active {
+	background: #407DD1;
+	border-color: #407DD1;
+	color: #fff !important;
+}
+/*按钮样式重定义====================end*/
+
+/*表单元素============================start*/
+/*表单元素下拉框、下拉树、文本框去倒角====================start*/
+.textbox {
+	border-radius: 0;
+}
+/*下拉框、下拉树、文本框去倒角====================end*/
+
+/*不可填时文本框颜色*/
+.textbox.textbox-readonly,
+.textbox.textbox-readonly input[readonly],
+.textbox.textbox-readonly.combo,
+.textbox.textbox-readonly.combo input[readonly],
+.textbox.textbox-readonly.combo.datebox,
+.textbox.textbox-readonly.combo.datebox input[readonly],
+.validatebox-readonly,
+input[data-options*="editable"] + span{
+	background: #f5f5f5;
+}
+
+.activeCombo .validatebox-readonly,
+.activeCombo .textbox.combo,
+.datebox input[readonly],
+.textbox.combo.datebox {
+	background: #fff !important;
+}
+
+/* disabled样式  */
+.textbox-disabled,
+.textbox-disabled input,
+.textbox-disabled a {
+	background-color: rgb(235,235,228) !important;
+}
+
+input[disabled] {
+	cursor: no-drop;
+}
+
+
+.disabled-container {
+	background: #ccc;
+	cursor: no-drop;
+}
+
+/*文本框获取焦点样式*/
+.textbox-focused {
+	border-color: #407DD1;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* disabled样式  */
+
+/*textbox下是按钮高度重置*/
+.textbox .textbox-button-right,
+.textbox .textbox-button-right:hover {
+	height: 100% !important;
+}
+
+/*表单元素============================end*/
+
+/*分页字体*/
+.datagrid-pager.pagination table{
+	font-size:12px;
+}
+
+/*menu样式扩展-----------start*/
+/*datagrid选中行下的menu样式*/
+.datagrid-row-selected .menu {
+	background: none;
+}
+
+/*菜单样式扩展==============start*/
+.menu {
+	border-width: 0;
+	color: #407DD1;
+}
+.menu-inline.menu {
+	width: 40px !important;
+	top: 8px !important;
+}
+.menu-text {
+	padding-left: 20px;
+}
+.menu-line {
+	border-left: none;
+	border-right: none;
+}
+/*menu样式扩展-----------end*/
+
+/*tooltip扩展-----------start*/
+.tooltip {
+	box-shadow: -1px 1px 5px #333;
+	-webkit-box-shadow: -1px 1px 5px #333;
+}
+/*tooltip扩展-----------end*/
+/*水电集团主题样式==================end*/

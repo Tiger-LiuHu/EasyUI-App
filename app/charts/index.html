@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LenSyn Front-End App - echart</title>
+  <meta charset="UTF-8">
+  <script src="../common/layout/header.js"></script>
+</head>
+
+<body class='comm_pa10'>
+  <div class='easyui-layout' data-options='fit:true'>
+    <div data-options="region:'north', border:false">
+      <div class='easyui-layout' data-options='fit:true'>
+        <div class="easyui-panel" data-options="border:false,width:'100%'">
+          <div class="breadCrumb">
+            <span id="navTitle">线路维护</span>
+          </div>
+        </div>
+        <div class="searchItem">
+          <form id="search" name="search" class="easyui-form comm-form advanceSearchItem">
+            <div class='comm_inlineb'>
+              <label>台区编号：</label>
+              <input class="easyui-textbox" name="transCode">
+            </div>
+            <div class='comm_inlineb'>
+              <label>台区名称：</label>
+              <input class="easyui-textbox" name="transName">
+            </div>
+            <div class='comm_inlineb activeCombo'>
+              <label>所属单位：</label>
+              <input class="easyui-textbox" name="orgId" id="trans">
+            </div>
+            <div class='comm_inlineb'>
+              <label>运行状态：</label>
+              <input class="easyui-combobox" id="statu" name="transStatus" data-options="valueField:'dimCode',textField:'dimName'">
+            </div>
+            <div class='comm_inlineb'>
+              <a href="javascript:void(0)" class="easyui-linkbutton query-btn active" id="btn_search">查询</a>
+              <a href="javascript:void(0)" class="easyui-linkbutton reset-btn">重置</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div data-options="region:'center', border:false">
+      <div class='easyui-layout' data-options='fit:true' id="mainCenter">
+        <div id="main" style="width:600px; height:400px;"></div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/components/charts/index.js"></script>
+</body>
+
+</html>

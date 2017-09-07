@@ -1,0 +1,152 @@
+/*=================comm-exp扩展样式===============*/
+/*边距组============start*/
+.comm_ma5{
+	margin:5px;
+}
+.comm_ma_l5{
+	margin-left:5px;
+}
+.comm_ma_r5{
+	margin-right:5px;
+}
+.comm_pa_t5{
+	padding-top:5px;
+}
+.comm_pa_b5{
+	padding-bottom:5px;
+}
+/*外边距组*/
+.comm_ma_tb{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.comm_ma_lr{
+	margin-left:10px;
+	margin-right:10px;
+}
+.comm_ma_r{
+	margin-right:10px;
+}
+.comm_ma_l{
+	margin-left:10px;
+}
+.comm_ma_t{
+	/*暂时取消树上边距  by:chenlilang（由杨槟提出）*/
+	/*margin-top:10px;*/
+}
+.comm_ma_b{
+	margin-bottom:10px;
+}
+.comm_ma20{
+	margin:20px;
+}
+.comm_ma_l20{
+	margin-left:20px;
+}
+.comm_ma_r20{
+	margin-right:20px;
+}
+.comm_ma_t20{
+	margin-top:20px;
+}
+.comm_ma_b20{
+	margin-bottom:20px;
+}
+.comm_ma_tb20{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.comm_ma_lr20{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+/*内边距组*/
+.comm_pa5{
+	padding:5px;
+}
+.comm_pa_tb{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.comm_pa_lr{
+	padding-left:10px;
+	padding-right:10px;
+}
+.comm_pa_r{
+	padding-right:10px;
+}
+.comm_pa_l{
+	padding-left:10px;
+}
+.comm_pa_t{
+	padding-top:10px;
+}
+.comm_pa_b{
+	padding-bottom:10px;
+}
+.comm_pa20{
+	padding:20px;
+}
+.comm_pa_lr20{
+	padding-left:20px;
+	padding-right:20px;
+}
+.comm_pa_tb20{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.comm_pa_l20{
+	padding-left:20px;
+}
+.comm_pa_r20{
+	padding-right:20px;
+}
+.comm_pa_t20{
+	padding-top:20px;
+}
+.comm_pa_b20{
+	padding-bottom:20px;
+}
+/*边距组============end*/
+
+/*布局组============start*/
+.col-50{
+	width: 50%;
+}
+.col-25{
+	width: 25%;
+}
+.col-33{
+	width: 33%;
+}
+/*布局组============end*/
+
+/*字体颜色组===========start*/
+.comm_color_blue {
+	color:#407DD1;
+}
+.comm_color_orange {
+	color:#D93B25;
+}
+.comm_color_green {
+	color:#2D8D46;
+}
+/*字体颜色组===========end*/
+
+/*transform样式------------start*/
+.comm_rotate180 {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.comm_rotate90 {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.comm_rotate-90 {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+/*transform样式------------end*/
+

@@ -1,0 +1,503 @@
+@charset "utf-8";
+/**
+ * Created by 黄华桥 on 2017/5/25.
+ * 新版UI调整样式修改
+ */
+/*10px的内边距*/
+.comm_pa10 {
+	padding: 10px !important;
+}
+
+.comm_pa_lr10 {
+	padding: 0 10px !important;
+}
+.comm_h10 {
+	height: 5px;
+}
+
+/*fieldset样式*/
+fieldset {
+	border: 1px solid #aaa;
+	padding-bottom: 10px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}/*fieldset*/
+legend {
+	padding: 0 10px;
+	margin-left: 10px;
+}/*legend*/
+
+/*datagrid滚动时north区域渐变动画*/
+.layout-panel-north {
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s linear;
+}
+
+/*左边菜单树添加右边框*/
+.comm_split_west_width0 .layout-panel-west {
+	border-right: 1px solid #ddd;
+}
+.comm_split_west_width0 .layout-panel-east {
+	border-left: 1px solid #ddd;
+}
+
+
+/*layout相关样式======================end*/
+
+/*loading 动画===================start*/
+.csshub-loading-layer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	z-index: 1000;
+}
+.csshub-loading-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	overflow: hidden;
+	background: transparent;
+	text-align: center;
+}
+.csshub-loading {
+	text-align: center
+}
+.csshub-loading>div {
+	background-color: #14b9c7;
+	width: 4px;
+	height: 35px;
+	border-radius: 2px;
+	margin: 2px;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	display: inline-block;
+	-webkit-animation: csshub-line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+	animation: csshub-line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+}
+.csshub-loading>div:nth-child(2), .csshub-loading>div:nth-child(4) {
+	-webkit-animation-delay: -0.4s !important;
+	animation-delay: -0.4s !important;
+}
+.csshub-loading>div:nth-child(1), .csshub-loading>div:nth-child(5) {
+	-webkit-animation-delay: -0.2s !important;
+	animation-delay: -0.2s !important;
+}
+
+@-webkit-keyframes csshub-line-scale-pulse-out {
+	0% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+	50% {
+		-webkit-transform: scaley(0.4);
+		transform: scaley(0.4);
+	}
+	100% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+}
+
+@keyframes csshub-line-scale-pulse-out {
+	0% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+	50% {
+		-webkit-transform: scaley(0.4);
+		transform: scaley(0.4);
+	}
+	100% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+}
+/*loading 动画===================end*/
+
+/*面包屑导航样式----------start*/
+.breadCrumb {
+	height: 39px;
+	margin-bottom: 10px;
+	padding-top: 4px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.breadCrumb>div {
+	float: right;
+	margin-top: -4px;
+}
+.breadCrumb>div:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+/*全局操作按钮样式*/
+.breadCrumb>div a {
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	padding: 0 15px;
+	margin-left: 10px;
+}
+
+/*面包屑导航下面内容样式*/
+.breadCrumb>#navTitle {
+    display: inline-block;
+    position: relative;
+    text-indent: 10px;
+}
+.breadCrumb>#navTitle:before {
+	display: inline-block;
+    content: "";
+    width: 2px;
+    height: 14px;
+    margin-right: 10px;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    background: #407DD1;
+}
+/*面包屑导航样式----------end*/
+
+/*搜索栏提示信息框------start*/
+.comm_search_tooltip {
+	padding: 8px;
+	background: #F5F6FA;
+	border: 1px solid #DCDCDC;
+	margin-bottom: 10px;
+}
+.comm_search_tooltip>.frendlyWarn {
+	color: #407DD1;
+}
+.comm_search_tooltip>.otherWarn {
+	color: #999;
+}
+.comm_search_tooltip>.closeTooltip {
+	font-size:20px;
+	line-height: 12px;
+	float: right;
+	cursor: pointer;
+}
+/*搜索栏提示信息框------end*/
+
+/*搜索栏设置按钮样式------start*/
+.refresh{
+	width: 27px;
+	height: 27px;
+	line-height: 28px;
+	text-align: center;
+	background: #f0f0f0;
+	border: 1px solid #DCDCDC;
+	cursor: pointer;
+	font-size: 14px;
+	display: inline-block;
+	float: left;
+}
+
+.refresh:hover {
+	background: #407DD1;
+	color: #fff;
+}
+/*搜索栏设置按钮样式------end*/
+
+/*搜索区域样式-------------start*/
+.searchItem {
+	/*margin-bottom: 10px;
+	min-height: 40px;
+	height: auto;*/
+	padding-bottom: 9px;
+}
+.searchItem:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/*搜索区域form表单样式*/
+form.comm-form {
+	width: 100%;
+}
+
+/*按钮下的i标签样式*/
+a.easyui-linkbutton .fa,
+a.easyui-linkbutton .fa:before {
+	width: 12px;
+}
+
+/*表单内的按钮样式*/
+.searchItem form a.easyui-linkbutton:not(:first-child),
+form.comm-form a.easyui-linkbutton:not(:first-child) {
+	margin-left: 5px;
+}
+
+.advanceSearchItem .hideItem {
+	display: none;
+}
+
+form.comm-form div.comm_inlineb.comm_float_right {
+	padding: 5px 0;
+}
+
+form.comm-form div.comm_inlineb {
+	padding: 5px;
+}
+
+form.comm-form div.comm_inlineb.first {
+	padding: 0px;
+}
+
+form.comm-form div.comm_inlineb:not(:last-child) {
+	margin-right: 10px;
+}
+
+.comm-form label>i,
+.searchItem form label>i {
+	margin-right: 5px;
+	color: #D93B25;
+}
+
+/*单选按钮*/
+.comm-form label.radioLabel {
+	width: 115px;
+}
+
+.comm-form label,
+.searchItem form label {
+	display: inline-block;
+	/*width: 105px;*/
+	width: auto !important;
+	text-align: right;
+	margin-right: 5px;
+}
+
+/*表格dataggrid样式--------------start*/
+/*批量操作div*/
+.dg-checkAllDiv,
+.dg-checkAllDiv input,
+.dg-checkAllDiv #multipuleOperate {
+	height: 47px;
+	line-height: 32px;
+	margin-top: 2px;
+}
+
+.dg-checkAllDiv a {
+	color: #333;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	margin-top: 7px;
+	background: #f0f0f0;
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+}
+.dg-checkAllDiv a:not(:first-child) {
+	margin-left: 10px;
+}
+/*  针对菜单按钮 Add by: chenlilang  */
+.dg-checkAllDiv a.easyui-menubutton {
+	margin-top: 7px;
+}
+
+/*datagrid头部的设置按钮样式*/
+.panel-title .dgheaderButton,
+.panel-title  a {
+	margin-top: -7px;
+	float: right;
+	cursor: pointer;
+	background: #ddd;
+	color: #999;
+	margin-right: 10px;
+}
+
+/*多表格datagrid设置最小高度*/
+/*datagrid行内按钮样式*/
+.dgbutton_disable {
+	color: #999;
+	text-decoration: underline;
+}
+
+/*操作按钮区域样式*/
+.datagrid-view td[field="handle"] {
+	text-align: center;
+}
+.datagrid-row td[field="handle"]>div.datagrid-cell {
+	padding: 0 4px;
+	overflow: visible;
+}
+.datagrid-row td>div.datagrid-cell a {
+	color: #407DD1;
+	cursor: pointer;
+}
+.datagrid-row td>div.datagrid-cell a:not(:last-child) {
+	margin-right: 10px;
+}
+/*选中项操作区域按钮样式*/
+.datagrid-row.datagrid-row-selected td>div.datagrid-cell a {
+	color: #D8EAF1;
+}
+
+/*表格行内操作按钮*/
+.datagrid-view td[field="handle"] .moreHandle {
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	text-align: left;
+	cursor: pointer;
+	color: #407DD1;
+}
+
+/*选中行行内操作按钮样式*/
+.datagrid-view .datagrid-row-selected td[field="handle"] .moreHandle{
+	color: #D8EAF1;
+}
+
+.datagrid-view td[field="handle"] .moreHandle .menubutton {
+	display: none;
+	position: absolute;
+	z-index: 9999999999;
+	right: 0;
+	border: 1px solid #81D6FA;
+	background-color: #81D6FA;
+	top: 22px;
+	padding: 0 20px 0 5px;
+ }
+.datagrid-view td[field="handle"] .moreHandle .menubutton li {
+	padding: 5px 0 5px 5px;
+}
+/*表格dataggrid样式--------------end*/
+
+/*toast提示框样式===================start*/
+.comm_toast_body {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.comm_toast_success,.comm_toast_danger,.comm_toast_warning {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	max-width: 300px;
+	line-height: 20px;
+	padding: 15px;
+	font-size: 14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.comm_toast_success{
+	border: 1px solid #b1f0a3;
+	color: #468847;
+	background-color: #c7f0bf;
+}
+
+.comm_toast_danger {
+	border: 1px solid #ebccd1;
+	color: #b94a48;
+	background-color: #f2dede;
+}
+
+.comm_toast_warning {
+	border: 1px solid #ff7d00;
+	color: #b94a48;
+	background-color: #ff7d00;
+}
+/*toast提示框样式===================end*/
+
+/*滚动条样式重写（适用于谷歌浏览器，赞未做其他浏览器兼容）------start*/
+/*滚动条宽高*/
+/*::-webkit-scrollbar*/
+/*滚动条上下button*/
+::-webkit-scrollbar-button{
+	width: 0;
+	height: 0;
+}
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+/*纵向滚动条上方按钮*/
+::-webkit-scrollbar-button:vertical:single-button:start{
+	background: url('../../libs/easyui/1.5.2/themes/material/images/menu_arrows.png') no-repeat -3px -4px;
+	/*background-size: 70% 40%;*/
+}
+
+/*纵向滚动条下方按钮*/
+::-webkit-scrollbar-button:vertical:single-button:end{
+	background: url('../../libs/easyui/1.5.2/themes/material/images/menu_arrows.png') no-repeat -19px -4px;
+}
+/*横向滚动条左方按钮*/
+::-webkit-scrollbar-button:horizontal:single-button:start{
+	background: url('../../libs/easyui/1.5.2/themes/material/images/menu_arrows.png') no-repeat -35px -4px;
+	/*background-size: 70% 40%;*/
+}
+/*横向滚动条右方按钮*/
+::-webkit-scrollbar-button:horizontal:single-button:end{
+	background: url('../../libs/easyui/1.5.2/themes/material/images/menu_arrows.png') no-repeat -51px -4px;
+}
+/*箭头与滚动条接触区域*/
+::-webkit-scrollbar-track     {
+	background:#f0f0f0;
+}
+/*滚动条背景图*/
+::-webkit-scrollbar-track-piece {
+	background: transparent;
+}
+/*滚动条区域*/
+::-webkit-scrollbar-thumb{
+	background: transparent;
+	border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #d1d1d1;
+}
+
+/*::-webkit-scrollbar-corner {
+    background:#f00;
+}
+::-webkit-scrollbar-resizer {
+    background:#FF0BEE;
+}*/
+/*滚动条样式重写（适用于谷歌浏览器，暂未做其他浏览器兼容）------end*/
+
+/*响应式处理(最大宽度为1280px时)==============start*/
+
+
+
+
+@media screen and (max-width: 1280px) {
+	/*面包屑导航样式----------start*/
+/*	.breadCrumb {
+	    height: 39px;
+	}*/
+	/*面包屑导航下面内容样式*/
+/*	.breadCrumb>#navTitle {
+		margin-top: 0;
+	}*/
+	/*面包屑导航样式----------end*/
+}
+
+/* datagrid左下角菜单按钮 */
+.icon-gengduo::before {
+	font-size: 13px;
+	color: #407DD1;
+}

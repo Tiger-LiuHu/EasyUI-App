@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LenSyn Front-End App - EasyUI</title>
+  <meta charset="UTF-8">
+  <script src="app/common/layout/header-index.js"></script>
+</head>
+
+<body class='easyui-layout' data-options='fit:true'>
+    <div id="primaryMenu" data-options="region:'west',border:false,width:180">
+      <!-- 示例菜单 -->
+      <div id="functionMenu" class="easyui-accordion accordion">
+        <div class="panel panel-htop" style="width: 180px;">
+          <div class="panel-header panel-header-noborder accordion-header accordion-header-selected" style="width: 157px; height: 22px;">
+            <div class="panel-title">
+              <i class="fa fa-caret-right comm_ma_r5 comm_rotate90"></i>
+              <span>档案管理</span>
+            </div>
+            <div class="panel-tool"><a href="javascript:;" class="panel-tool-collapse" style="display: none;"></a><a href="javascript:;" class="accordion-collapse"></a></div>
+          </div>
+          <div title="" class="panel-body panel-body-noborder accordion-body" id="ba" style="display: block; width: 180px;">
+            <ul>
+              <li class="comm_pa5 comm_pa_l pointer item active" data-href="../../../epm/br/lines/linesmatn/index.html">线路维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/br/lines/transmatn/index.html">台区维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/cp/powerfactor/pfparmvermatn/index.html">力调参数维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/cp/price/priceparmmatn/index.html">电价参数维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/cp/lines/linesparmmatn/index.html">导线参数维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/cp/trans/transparmmatn/index.html">变损参数维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/rd/rdsections/sectionmatn/sectionmatn.html">抄表段维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/cf/archives/index/index.html?type=add">用户档案维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+              <li class="comm_pa5 comm_pa_l pointer item" data-href="../../../epm/br/lines/terminal/terminalList.html">终端维护
+                <div class="comm_dhide childNodes"></div>
+                <div class="comm_dhide grandsonNodes"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div data-options="region:'center',border:false">
+      <div class='easyui-layout' data-options='fit:true' id="mainCenter">
+        <div data-options="region:'center',border:false">
+          <iframe name="mainContent" src="app/charts/index.html" width="100%" height="100%" border="false"></iframe>
+          <!-- <iframe name="mainContent" src="http://www.easyui.info/easyui/" width="100%" height="100%" border="false"></iframe> -->
+        </div>
+      </div>
+    </div>
+    <script src="app/assets/js/components/home/index.js"></script>
+</body>
+
+</html>
